@@ -219,3 +219,22 @@ export function aufgabe10(args) {
   return false
 }
 linkupExerciseHandler("[data-click=aufgabe10]", aufgabe10)
+
+export function aufgabe11(args) {
+  //Gib den ASCII code eines einzelnen Buchstabens an.
+  const input = args
+  // Schreibe eine Funktion, die einen Buchstaben als Eingabe erwartet und den ASCII code des Buchstabens zurückgibt
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === currentElement.toUpperCase()) {
+      return currentElement.charCodeAt(0)
+    } else {
+      return currentElement.charCodeAt(0) + 32
+
+    }
+  }
+  return false
+}
+linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
+
+export function aufgabe12(args) {
