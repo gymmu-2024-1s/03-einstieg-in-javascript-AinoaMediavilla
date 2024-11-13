@@ -54,17 +54,168 @@ export function aufgabe02(args) {
     result.push(currentUpperCaseLetter)
   }
   return result.join("")
-}
+} //
 linkupExerciseHandler("[data-click=aufgabe02]", aufgabe02)
 
 export function aufgabe03(args) {
   const input = args
-  const regex = /e/gi //Regex, um alle "e" und "E" zu finden
-  const matches = input.match(regex)
 
-  //Gibgt die Anzahl der gefundenen Vorkommen an
-  return matches ? matches.length : 0
+  // Erstelle eine Variable um alle e's zu zählen
+  let count = 0
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    // Wenn der aktuelle Zeichen eine 'e' ist, dann erhöhen wir die Variable
+    // count um 1.
+    if (currentElement === "e") {
+      count = count + 1
+    }
+  }
+
+  // Gib die Anzahl der e's aus
+  return count
 }
 
 //Beispiel für den Aufruf
 linkupExerciseHandler("[data-click=aufgabe03]", aufgabe03)
+export function aufgabe04(args) {
+  const input = args
+  //erstelle einen code um die wörter zu zählen
+  let count = 0
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // Wenn der aktuelle Zeichen ein Leerzeichen ist, dann erhöhen wir die Variable count um 1
+    if (currentElement === " ") {
+      count = count + 1
+    }
+  }
+  return count + 1
+}
+linkupExerciseHandler("[data-click=aufgabe04]", aufgabe04)
+
+export function aufgabe05(args) {
+  const input = args
+  //Schreibe eine Funktion, die testet, ob in einem Text mindestens eine Grossbuchstabe vorkommt.
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // Wenn der aktuelle Zeichen ein Grossbuchstabe ist, dann gib true aus
+    if (currentElement === currentElement.toUpperCase()) {
+      return true
+    }
+  }
+  return false
+}
+linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
+
+export function aufgabe06(args) {
+  const input = args
+  //Schreibe eine Funktion, die testet, ob in einem Text mindestens ein Sonderzeichen vorkommt.
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // Wenn der aktuelle Zeichen ein Sonderzeichen ist, dann gib true aus
+    if (
+      currentElement === "!" ||
+      currentElement === "@" ||
+      currentElement === "#" ||
+      currentElement === "$" ||
+      currentElement === "%" ||
+      currentElement === "^" ||
+      currentElement === "&" ||
+      currentElement === "*" ||
+      currentElement === "(" ||
+      currentElement === ")" ||
+      currentElement === "-" ||
+      currentElement === "_" ||
+      currentElement === "+" ||
+      currentElement === "=" ||
+      currentElement === "[" ||
+      currentElement === "]" ||
+      currentElement === "{" ||
+      currentElement === "}" ||
+      currentElement === "|" ||
+      currentElement === ";" ||
+      currentElement === ":" ||
+      currentElement === "'" ||
+      currentElement === "," ||
+      currentElement === "<" ||
+      currentElement === ">" ||
+      currentElement === "?" ||
+      currentElement === "/"
+    ) {
+      return true
+    }
+  }
+  return false
+}
+linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
+
+export function aufgabe07(args) {
+  const input = args
+  let hasund = false
+  //schreibe eine Funktion, die testet, ob in einem Text das Wort 'und' vorkommt.
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i] //das aktuelle Zeichen
+    // Wenn der aktuelle Zeichen 'und' ist, dann gib true aus
+    if (currentElement === "u") {
+      const nextElement = input[i + 1]
+      if (nextElement === "n") {
+        const nextNextElement = input[i + 2]
+        if (nextNextElement === "d") {
+          hasund = true
+        }
+      }
+    }
+  }
+  return hasund
+}
+
+linkupExerciseHandler("[data-click=aufgabe07]", aufgabe07)
+export function aufgabe08(args) {
+  //Ersetze alle `e`s mit einer `3`
+
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "e") {
+      result.push("3")
+    } else {
+      result.push(currentElement)
+    }
+  }
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe08]", aufgabe08)
+
+export function aufgabe09(args) {
+  //Teste ob eine Eingabe genau sechs Zeichen lang ist.
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    result.push(currentElement)
+    if (result.length === 6) {
+      return true
+    }
+  }
+  return false
+}
+linkupExerciseHandler("[data-click=aufgabe09]", aufgabe09)
+
+export function aufgabe10(args) {
+  //Teste ob eine Eingabe ein korrekter RGB Hexcode ist.
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    result.push(currentElement)
+    if (result.length === 7) {
+      return true
+    }
+  }
+  return false
+}
+linkupExerciseHandler("[data-click=aufgabe10]", aufgabe10)
