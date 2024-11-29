@@ -243,6 +243,20 @@ export function aufgabe12(args) {
 }
 linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)¨
 
-export function aufgabe12(args) {
+export function aufgabe13(args) {
 //die position des letzten e in einem text
   const input = args
+  for (let i = input.length - 1; i >= 0; i--) {
+    const currentElement = input[i]
+    if (currentElement === "e") {
+      return i
+    }
+  }
+  return -1
+}
+linkupExerciseHandler("[data-click=aufgabe13]", aufgabe13)
+
+
+export function aufgabe14(args) {
+  const input = args
+  let count = 0
