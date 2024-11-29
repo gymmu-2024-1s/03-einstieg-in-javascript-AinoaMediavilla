@@ -262,4 +262,11 @@ export function aufgabe14(args) {
   let count = 0
 // suche die position des dritten e's
 for( let1 = 0; i < input.length; i++){
-  if (input)
+  if (input [i] === "e"){
+    count++
+    }
+    if count === 3{
+      return i
+  }
+}
+linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
