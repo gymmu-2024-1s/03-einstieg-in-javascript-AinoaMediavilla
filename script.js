@@ -222,19 +222,27 @@ linkupExerciseHandler("[data-click=aufgabe10]", aufgabe10)
 
 export function aufgabe11(args) {
   //Gib den ASCII code eines einzelnen Buchstabens an.
-  const input = args
-  // Schreibe eine Funktion, die einen Buchstaben als Eingabe erwartet und den ASCII code des Buchstabens zurückgibt
-  for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    if (currentElement === currentElement.toUpperCase()) {
-      return currentElement.charCodeAt(0)
-    } else {
-      return currentElement.charCodeAt(0) + 32
 
-    }
-  }
-  return false
+  const input = args //Buchstabe
+  let asciiCode = 0
+  asciiCode = input.charCodeAt(0)
+  return asciiCode
 }
 linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
 
 export function aufgabe12(args) {
+  //suche die position des erste e in einem text
+  const input = args
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "e") {
+      return i
+    }
+  }
+  return -1
+}
+linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)¨
+
+export function aufgabe12(args) {
+//die position des letzten e in einem text
+  const input = args
