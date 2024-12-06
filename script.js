@@ -307,3 +307,8 @@ export function aufgabe16(args) {
     for (let i = 0; i < input.length; i++) {
       const currentElement = input[i]
       //sollte 'aa' heissen
+      if (currentElement === "aa") {
+        result.push("aa")
+      }
+    }
+    //jedes zeichen sollte verdoppelt werden
