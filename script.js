@@ -320,3 +320,5 @@ export function aufgabe16(args) {
     return result.join("")
   }
   linkupExerciseHandler("[data-click=aufgabe19]", aufgabe19)
+
+  export function aufgabe22(args) {
