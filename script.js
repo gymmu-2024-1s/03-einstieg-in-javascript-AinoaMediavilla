@@ -312,3 +312,11 @@ export function aufgabe16(args) {
       }
     }
     //jedes zeichen sollte verdoppelt werden
+    for (let i = 0; i < result.length; i++) {
+      const currentElement = input[i]
+      result.push(currentElement)
+      result.push(currentElement)
+    }
+    return result.join("")
+  }
+  linkupExerciseHandler("[data-click=aufgabe19]", aufgabe19)
