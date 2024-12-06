@@ -270,3 +270,16 @@ for( let1 = 0; i < input.length; i++){
   }
 }
 linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
+
+export function aufgabe15(args) {
+  const input = arg
+  const result = []
+  //lesen sie die eingabe bis zum Zeichen '$' als ersten Teil einer Liste und den Rest als zweiten Teil einer Liste
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "$") {
+      return result
+    } else {
+      result.push(currentElement)
+    }
+  }
