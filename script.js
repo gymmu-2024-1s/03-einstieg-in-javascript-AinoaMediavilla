@@ -327,3 +327,6 @@ export function aufgabe16(args) {
     retrne result.join("")
   }
   linkupExerciseHandler("[data-click=aufgabe22]", aufgabe22)
+
+  export function aufgabe24(args) {
+    //vertausche
