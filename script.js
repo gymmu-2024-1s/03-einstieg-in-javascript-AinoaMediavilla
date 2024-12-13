@@ -178,12 +178,12 @@ export function aufgabe09(args) {
   const result = []
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    result.push(currentElement)
-    if (result.length === 6) {
-      return true
-    }
+    count=count+1
   }
-  return false
+  let has 6 =false
+  if (count === 6) {
+    has6 = true
+  }
 }
 linkupExerciseHandler("[data-click=aufgabe09]", aufgabe09)
 
