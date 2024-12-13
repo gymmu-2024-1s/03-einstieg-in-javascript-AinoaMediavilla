@@ -60,6 +60,7 @@ linkupExerciseHandler("[data-click=aufgabe02]", aufgabe02)
 
 export function aufgabe03(args) {
   const input = args
+  const result = []
 
   // Erstelle eine Variable um alle e's zu zählen
   let count = 0
