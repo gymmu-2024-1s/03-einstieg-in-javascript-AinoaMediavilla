@@ -110,43 +110,27 @@ linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
 export function aufgabe06(args) {
   const input = args
   //Schreibe eine Funktion, die testet, ob in einem Text mindestens ein Sonderzeichen vorkommt.
+const result = []
+let hasSonderzeichen = false
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  const currentUppercaseletter = currentletter.toUpperCase()
+  result.push(currentUppercaseletter)
 
-  for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    // Wenn der aktuelle Zeichen ein Sonderzeichen ist, dann gib true aus
-    if (
-      currentElement === "!" ||
-      currentElement === "@" ||
-      currentElement === "#" ||
-      currentElement === "$" ||
-      currentElement === "%" ||
-      currentElement === "^" ||
-      currentElement === "&" ||
-      currentElement === "*" ||
-      currentElement === "(" ||
-      currentElement === ")" ||
-      currentElement === "-" ||
-      currentElement === "_" ||
-      currentElement === "+" ||
-      currentElement === "=" ||
-      currentElement === "[" ||
-      currentElement === "]" ||
-      currentElement === "{" ||
-      currentElement === "}" ||
-      currentElement === "|" ||
-      currentElement === ";" ||
-      currentElement === ":" ||
-      currentElement === "'" ||
-      currentElement === "," ||
-      currentElement === "<" ||
-      currentElement === ">" ||
-      currentElement === "?" ||
-      currentElement === "/"
-    ) {
-      return true
-    }
+
+  // Wenn der aktuelle Zeichen ein Sonderzeichen ist, dann gib true aus
+
+}
+for(let i = 0; i < result.length; i++){
+  const currentElement = result[i]
+  const lowercase  = currentElement.tolowerCase() //current element von grossen buchstaben in kleine buchstaben umwandeln
+  if (currentElement === lowercase) {
+    hasSonderzeichen = true
+  } else {
+    hasSonderzeichen = false
   }
-  return false
+}
+return hasSonderzeichen
 }
 linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
 
