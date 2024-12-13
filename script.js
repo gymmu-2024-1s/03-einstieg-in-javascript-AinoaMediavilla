@@ -49,12 +49,13 @@ export function aufgabe02(args) {
   const input = args
   const result = []
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    const currentUpperCaseLetter = currentElement.toUpperCase()
-    result.push(currentUpperCaseLetter)
+    const currentLetter = input[i] //speicher das current zeichen aus input
+    const currentUppercase = currentLetter.toUpperCase()
+    result.push(currentUppercaseLetter)
   }
-  return result.join("")
-} //
+  return result.join("") // Macht aus der Liste einen Text
+}
+
 linkupExerciseHandler("[data-click=aufgabe02]", aufgabe02)
 
 export function aufgabe03(args) {
@@ -324,7 +325,7 @@ export function aufgabe16(args) {
   export function aufgabe22(args) {
     const input = args
     const result = []
-    retrne result.join("")
+    return result.join("")
   }
   linkupExerciseHandler("[data-click=aufgabe22]", aufgabe22)
 
