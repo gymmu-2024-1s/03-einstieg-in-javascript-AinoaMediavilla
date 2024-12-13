@@ -100,17 +100,10 @@ export function aufgabe04(args) {
 linkupExerciseHandler("[data-click=aufgabe04]", aufgabe04)
 
 export function aufgabe05(args) {
-  const input = args
+  return /[A-Z]/.test(args) //Sucht zuerst alle zeichen zwischen a und z
   //Schreibe eine Funktion, die testet, ob in einem Text mindestens eine Grossbuchstabe vorkommt.
 
-  for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    // Wenn der aktuelle Zeichen ein Grossbuchstabe ist, dann gib true aus
-    if (currentElement === currentElement.toUpperCase()) {
-      return true
-    }
-  }
-  return false
+
 }
 linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
 
