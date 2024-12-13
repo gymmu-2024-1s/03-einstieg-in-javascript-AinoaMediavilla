@@ -73,6 +73,9 @@ export function aufgabe03(args) {
     if (currentElement === "e") {
       count = count + 1
     }
+    if (currentElement === "E") {
+      count = count + 1
+    }
   }
 
   // Gib die Anzahl der e's aus
