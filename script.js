@@ -309,3 +309,28 @@ linkupExerciseHandler("[data-click=aufgabe22]", aufgabe22)
 export function aufgabe24(args) {
   //vertausche
 }
+
+export function aufgabe40(args) {
+  const input = args
+  const result = []
+
+  // Erstelle eine Variable um alle a's zu zählen
+  let count = 0
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    // Wenn der aktuelle Zeichen eine 'a' ist, dann erhöhen wir die Variable
+    // count um 1.
+    if (currentElement === "a") {
+      count = count + 1
+    }
+    if (currentElement === "A") {
+      count = count + 1
+    }
+  }
+
+  // Gib die Anzahl der a's aus
+  return count
+}
+linkupExerciseHandler("[data-click=aufgabe40]", aufgabe40)
