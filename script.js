@@ -102,35 +102,31 @@ linkupExerciseHandler("[data-click=aufgabe04]", aufgabe04)
 export function aufgabe05(args) {
   return /[A-Z]/.test(args) //Sucht zuerst alle zeichen zwischen a und z
   //Schreibe eine Funktion, die testet, ob in einem Text mindestens eine Grossbuchstabe vorkommt.
-
-
 }
 linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
 
 export function aufgabe06(args) {
   const input = args
   //Schreibe eine Funktion, die testet, ob in einem Text mindestens ein Sonderzeichen vorkommt.
-const result = []
-let hasSonderzeichen = false
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
-  const currentUppercaseletter = currentletter.toUpperCase()
-  result.push(currentUppercaseletter)
+  const result = []
+  let hasSonderzeichen = false
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const currentUppercaseletter = currentletter.toUpperCase()
+    result.push(currentUppercaseletter)
 
-
-  // Wenn der aktuelle Zeichen ein Sonderzeichen ist, dann gib true aus
-
-}
-for(let i = 0; i < result.length; i++){
-  const currentElement = result[i]
-  const lowercase  = currentElement.tolowerCase() //current element von grossen buchstaben in kleine buchstaben umwandeln
-  if (currentElement === lowercase) {
-    hasSonderzeichen = true
-  } else {
-    hasSonderzeichen = false
+    // Wenn der aktuelle Zeichen ein Sonderzeichen ist, dann gib true aus
   }
-}
-return hasSonderzeichen
+  for (let i = 0; i < result.length; i++) {
+    const currentElement = result[i]
+    const lowercase = currentElement.tolowerCase() //current element von grossen buchstaben in kleine buchstaben umwandeln
+    if (currentElement === lowercase) {
+      hasSonderzeichen = true
+    } else {
+      hasSonderzeichen = false
+    }
+  }
+  return hasSonderzeichen
 }
 linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
 
@@ -178,9 +174,9 @@ export function aufgabe09(args) {
   const result = []
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    count=count+1
+    count = count + 1
   }
-  let has 6 =false
+  let has6 = false
   if (count === 6) {
     has6 = true
   }
@@ -223,10 +219,10 @@ export function aufgabe12(args) {
   }
   return -1
 }
-linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)¨
+linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
 
 export function aufgabe13(args) {
-//die position des letzten e in einem text
+  //die position des letzten e in einem text
   const input = args
   for (let i = input.length - 1; i >= 0; i--) {
     const currentElement = input[i]
@@ -238,17 +234,17 @@ export function aufgabe13(args) {
 }
 linkupExerciseHandler("[data-click=aufgabe13]", aufgabe13)
 
-
 export function aufgabe14(args) {
   const input = args
   let count = 0
-// suche die position des dritten e's
-for( let1 = 0; i < input.length; i++){
-  if (input [i] === "e"){
-    count++
+  // suche die position des dritten e's
+  for (let1 = 0; i < input.length; i++) {
+    if (input[i] === "e") {
+      count++
     }
-    if count === 3{
+    if (count === 3) {
       return i
+    }
   }
 }
 linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
@@ -277,38 +273,39 @@ export function aufgabe16(args) {
     if (currentElement === "$") {
       break
     }
-      result.push(currentElement)
-    }
-    return result.join("")
+    result.push(currentElement)
   }
-  linkupExerciseHandler("[data-click=aufgabe16]", aufgabe16)
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe16]", aufgabe16)
 
-  export function aufgabe19(args) {
-    const input = args
-    const result = []
-    for (let i = 0; i < input.length; i++) {
-      const currentElement = input[i]
-      //sollte 'aa' heissen
-      if (currentElement === "aa") {
-        result.push("aa")
-      }
+export function aufgabe19(args) {
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //sollte 'aa' heissen
+    if (currentElement === "aa") {
+      result.push("aa")
     }
-    //jedes zeichen sollte verdoppelt werden
-    for (let i = 0; i < result.length; i++) {
-      const currentElement = input[i]
-      result.push(currentElement)
-      result.push(currentElement)
-    }
-    return result.join("")
   }
-  linkupExerciseHandler("[data-click=aufgabe19]", aufgabe19)
-
-  export function aufgabe22(args) {
-    const input = args
-    const result = []
-    return result.join("")
+  //jedes zeichen sollte verdoppelt werden
+  for (let i = 0; i < result.length; i++) {
+    const currentElement = input[i]
+    result.push(currentElement)
+    result.push(currentElement)
   }
-  linkupExerciseHandler("[data-click=aufgabe22]", aufgabe22)
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe19]", aufgabe19)
 
-  export function aufgabe24(args) {
-    //vertausche
+export function aufgabe22(args) {
+  const input = args
+  const result = []
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe22]", aufgabe22)
+
+export function aufgabe24(args) {
+  //vertausche
+}
